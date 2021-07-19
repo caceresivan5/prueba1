@@ -1,0 +1,309 @@
+ /*Paleta de colores*/
+        
+ :root {
+    --ColorPrimarioTexto: #DC7633;
+    --colorSecundario: #E59866;
+    --colorBotonFormulario: #154360;
+    --colorNaranjaClaro: #FAD7A0;
+}
+/*Globales*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Varela Round', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+/*SUPERIOR*/
+
+.superior{
+    display: flex;
+    justify-content: space-between;
+}
+/*CARRITO*/
+.subMenu img{
+    width: 80%;
+    margin: 2rem ;
+}
+.subMenu img:hover{
+    cursor: pointer;
+}
+.subMenu ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ .subMenu li {
+    display: inline-block;
+    width: 25%;
+    position:relative;
+    font-size: 5rem;
+    font-weight: bold;
+    
+ }
+ .subMenu ul ul {
+    position: absolute;
+    display: none;
+ }
+ .subMenu  ul li {
+    display: block;
+ }
+ .subMenu li:hover ul {
+    display:block;
+ }
+ /*TABLA DEL CARRITO*/
+
+ .subMenu th{
+     font-size: 2rem;
+     padding: 0rem 2rem ;
+     font-weight: normal;
+     font-size: 2rem; 
+     text-align: center; 
+     padding: 1rem;
+ }
+ .subMenu td{
+     font-size: 2.5rem;
+     padding: 1rem 2rem;
+     font-weight: 900;
+ }
+
+ #carrito{
+    background-color: white;
+    width: 400%;
+    border: 1px solid black;
+    margin: 0rem 1rem;
+ }
+ #carrito a{
+     text-decoration: none;
+     color: red;
+     display: block;
+     text-align: center;
+     font-size: 2rem;
+     padding: 5rem;
+ }
+
+ /* BANNER PRINCIPAL */
+.navegacion__logoprincipal{
+    margin: 0 auto;
+    width: 100%;
+}
+.navegacion__logoprincipal img{
+    display: block;
+    width: 100%;
+}
+
+
+/* MENU */
+.navegacion {
+    margin: 4rem auto;
+}
+.navegacion ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.navegacion  li{
+    display: inline; 
+    font-size: 2rem; 
+    margin: 2rem;
+    cursor: pointer;
+}
+.navegacion a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* PROMOCIONES */
+
+.ofertas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ofertas__imagen{
+    width: 30%;
+
+}
+.ofertas__imagen img{
+    width: 100%;
+
+}
+/* BOTONES PARA FILTRAR */
+
+.botonesParaFiltrar{
+    display: flex;
+    justify-content: center;
+}
+.botonesParaFiltrar__boton{
+    margin: 2rem;
+}
+.botonesParaFiltrar__boton button:hover{
+    background-color: red;
+}
+.botonesParaFiltrar__boton button{
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 150%;
+    font-weight: bolder;
+}
+.botonesParaFiltrar__boton h3{
+    font-size: 3rem;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+ 
+    
+}
+.listaProductos{
+    margin: 5rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: transform 0.5s;
+}
+.listaProductos:hover{
+    transform: scale(1.1);
+}
+.botonComprar p{
+    display: block;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+    
+    
+}
+.botonComprar p:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.productosDestacados{
+    display: flex;
+    justify-content: center;
+}
+.productos__producto{
+    width: 20%;
+    height: 50rem;
+    margin: 3rem;
+    transition: transform 0.5s;
+}
+.productos__producto:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.productos__producto img{
+    display: none;
+    width: 70%;
+    display: block;
+    margin: auto auto;
+}
+/* PRODUCTOS DESTACADOS */
+.imagenZapatilla1, .imagenZapatilla2, .imagenZapatilla3, .imagenCampera1, .imagenCampera2, .imagenCampera3{
+    background-image: url(../img/campera10.png);
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.5s;
+}
+/* ZAPATILLAS*/
+.imagenZapatilla1{
+    background-image: url(../img/zapatilla1.png);
+    
+}
+.imagenZapatilla1:hover{
+    background-image: url(../img/zapatilla1-2.png);
+   
+
+}
+.imagenZapatilla2{
+    background-image: url(../img/zapatilla2.png);
+}
+.imagenZapatilla2:hover{
+    background-image: url(../img/zapatilla2-2.png);
+}
+.imagenZapatilla3{
+    background-image: url(../img/zapatilla3.png);
+}
+.imagenZapatilla3:hover{
+    background-image: url(../img/zapatilla3-3.png);
+}
+/* CAMPERAS */
+.imagenCampera1:hover{
+    background-image: url(../img/campera10-2.png);
+}
+.imagenCampera2{
+    background-image: url(../img/campera12.png);
+}
+.imagenCampera2:hover{
+    background-image: url(../img/campera12-2.png);
+}
+.imagenCampera3{
+    background-image: url(../img/campera11.png);
+}
+.imagenCampera3:hover{
+    background-image: url(../img/campera11-2.png);
+}
+
+.productos__producto p{
+    font-size: 1.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.productos__producto a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    background-color: black;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.productos__producto a:hover{
+    background-color: red;
+}
+.productos__precio p{
+    color: red;
+}
+.productos__boton{
+    width: 50%;
+    margin: 2rem auto;
+}
+.precio{
+    color: red;
+}
+
+

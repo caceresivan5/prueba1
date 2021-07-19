@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/productos.css">
+    <title>Desafio 4</title>
+</head>
+<body>
+    <header>
+        <div class="superior">
+
+            <!--CARRITO UTILIZANDO SUBMENU-->
+            <div class="subMenu">
+                <ul>
+                    <li><img src="img/carrito.png" type="button" onclick=" verCarritoProductos()" alt="">
+                        <ul>
+                            <li>
+                                <div id="carrito">
+
+                                    <table id="lista-carrito2">
+                                        <thead>
+                                            <tr>
+                                                <td>ARTICULO</td>
+                                                <td>IMAGEN</td>
+                                                <td>DETALLE</td>
+                                                <td>TALLE</td>
+                                                <td>PRECIO</td>
+                                                <td>CANTIDAD</td>
+                                            </tr>
+                                        </thead>
+                                        <Tbody>
+
+
+                                        </Tbody>
+                                        
+                                    </table>
+                                    <a href="#" id="vaciar-carrito">CERRAR</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+            </div>
+
+             <!--MENU-->
+        <nav>
+            <div class="navegacion">  
+               
+            <ul>
+                <li> <a href="index.html">INICIO</a> </li>
+                <li> <a href="productos.html"style="color: red;">PRODUCTOS</a> </li>
+                <li> <a href="#">CONTACTOS</a></li>
+            </ul>
+        </div>
+        </nav>
+
+            
+       <!--FILTRAR -->
+        <div class="botonesParaFiltrar">
+            <div class="botonesParaFiltrar__boton">
+              <h3>BUSCAR</h3>
+            </div>
+            
+            <div class="botonesParaFiltrar__boton">
+                <button type="button" class="apretar1" >CAMPERAS</button>
+            </div>
+
+            <div class="botonesParaFiltrar__boton">
+                <button type="button"  >ZAPATILLAS</button>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    </header>
+
+    <main>
+
+        <h1>NUESTROS PRODUCTOS</h1>
+
+       <section>
+           <div class="filtrarProd">
+               <p>FILTRAR :</p>
+
+               <div class="CheckBox">
+                <button id="zapatillas" onclick="filtrarZapa()">ZAPATILLAS</button>
+               </div>
+
+               <div class="CheckBox">
+               <input type="checkbox" id="camperas">
+               <label for="camperas">CAMPERAS</label>
+            </div>
+            
+           </div>
+
+       </section>
+            
+
+        <section>
+
+            <div class="productos">
+
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+                <div class="listaProductos"></div>
+
+            </div>
+        </section>
+
+      
+    </main>
+
+    <footer>
+        <div class="derechos">
+            <p>Extra Sport 2021 ©  - Todos los Derechos Reservados - </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="script2.js"></script> -->
+</body>
+</html>

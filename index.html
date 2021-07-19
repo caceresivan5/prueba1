@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio 4</title>
+</head>
+<body>
+    <header>
+        <div class="superior">
+
+            <!--CARRITO UTILIZANDO SUBMENU-->
+            <div class="subMenu">
+                <ul>
+                    <li><img src="img/carrito.png" type="button" onclick="verListaCarrito(), verCarritoProductos()" alt="">
+                        <ul>
+                            <li>
+                                <div id="carrito">
+
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <td>ARTICULO</td>
+                                                <td>IMAGEN</td>
+                                                <td>DETALLE</td>
+                                                <td>TALLE</td>
+                                                <td>PRECIO</td>
+                                                <td>CANTIDAD</td>
+                                            </tr>
+                                        </thead>
+                                        <Tbody></Tbody>
+                                        
+                                    </table>
+                                    <a href="#" id="vaciar-carrito">CERRAR</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    </ul>
+            </div> <!--CARRITO FINAL -->
+
+             <!--MENU-->
+        <nav>
+            <div class="navegacion">  
+               
+            <ul>
+                <li> <a href="index.html"style="color: red;">INICIO</a> </li>
+                <li> <a href="productos.html">PRODUCTOS</a> </li>
+                <li> <a href="#">CONTACTOS</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+    
+
+        <div class="navegacion__logoprincipal">
+            <img src="img/banner1.png" alt="logo empresa">
+        </div>
+       
+
+    </header>
+
+    <main>
+        <section> <!--SECCION OFERTAS-->
+            <div class="ofertas">
+                <div class="ofertas__imagen">
+                    <img src="img/promo1.jpg" alt="promo 1">
+                </div>
+                <div class="ofertas__imagen">
+                    <img src="img/promo2.jpg" alt="promo 2">
+                </div>
+                <div class="ofertas__imagen">
+                    <img src="img/promo3.jpg" alt="promo 3">
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <h1>DESATACADOS DEL MES</h1>
+        </section>
+        <section> <!--SECCION ZAPATILLAS-->
+            <h1>ZAPATILLAS</h1>
+
+            <div class="productosDestacados">
+
+                <div class="productos__producto">
+                    <div class="imagenZapatilla1">
+                        
+                    </div>
+                    <p>ZAPATILLAS ADIDAS SPORT 360 </p>
+                    <div class="productos__precio">
+                        <p>$6.500</p>
+                    </div>
+                    <div class="productos__boton">
+                        <a  type="button" id="boton0" onclick="agregarCarrito0(), verListaCarrito()" > AÑADIR AL CARRITO </a>
+                    </div>
+
+                </div>
+
+                <div class="productos__producto">
+                    <div class="imagenZapatilla2">
+                        
+                    </div>
+                    <p>ZAPATILLAS REEBOK ADVENTURE  </p>
+                    <div class="productos__precio">
+                        <p>$5.700</p>
+                    </div>
+                    <div class="productos__boton">
+                        <a type="button" onclick="agregarCarrito5(), verListaCarrito()"> AÑADIR AL CARRITO </a>
+                    </div>
+                </div>
+
+                <div class="productos__producto">
+                    <div class="imagenZapatilla3">
+                        
+                    </div>
+                    <p>ZAPATILLAS ADIDAS SPORT TEAM </p>
+                    <div class="productos__precio">
+                        <p>$7.500</p>
+                    </div>
+                    <div class="productos__boton">
+                        <a  type="button" onclick="agregarCarrito8(), verListaCarrito()"> AÑADIR AL CARRITO </a>
+                    </div>
+                </div>
+                
+            
+
+            </div>
+        </section>
+
+        <section> <!--SECCION CAMPERAS-->
+            <h1>CAMPERAS</h1>
+
+            <div class="productosDestacados">
+
+                <div class="productos__producto ">
+                    <div class="imagenCampera1">
+                        
+                    </div>
+                    <p>CAMPERA ADIDAS ORIGINAL ARGENTINA </p>
+                    <div class="productos__precio">
+                        <p>$12.500</p>
+                    </div>
+                    <div class="productos__boton">
+                        <a  type="button" onclick="agregarCarritoCamp1(), verListaCarrito()"> AÑADIR AL CARRITO </a>
+                    </div>
+                </div>
+
+                <div class="productos__producto">
+                    <div class="imagenCampera2">
+                        
+                    </div>
+                    <p>CAMPERA ADIDAS ORIGINAL BOCA JUNIORS  </p>
+                    <div class="productos__precio">
+                        <div class="productos__precio">
+                            <p>$13.000</p>
+                        </div>
+                    </div>
+                    <div class="productos__boton">
+                        <a  type="button" onclick="agregarCarritoCamp2(), verListaCarrito()"> AÑADIR AL CARRITO </a>
+                    </div>
+                </div>
+
+                <div class="productos__producto">
+                    <div class="imagenCampera3">
+                        
+                    </div>
+                    <p>CAMPERA ADIDAS ORIGINAL RIVER PLATE </p>
+                    <div class="productos__precio">
+                        <p>$11.500</p>
+                    </div>
+                    <div class="productos__boton">
+                        <a  type="button" onclick="agregarCarritoCamp3(),verListaCarrito()"> AÑADIR AL CARRITO </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="derechos">
+            <p>Extra Sport 2021 ©  - Todos los Derechos Reservados - </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>

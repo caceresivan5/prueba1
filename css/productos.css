@@ -1,0 +1,11 @@
+.filtrarProd{
+    display: flex;
+    justify-content: center;
+}
+
+.CheckBox{
+    margin: 2rem;
+}
+.filtrarProd p{
+margin: 2rem;
+}
